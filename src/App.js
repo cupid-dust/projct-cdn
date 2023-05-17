@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-function App() {
+function ChatWidget() {
+  const handleClick = () => {
+    // Handle chat widget toggle or open action
+    console.log("Chat widget is toggled or opened");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="chat-widget">
+      <button className="chat-widget-button" onClick={handleClick}>
+        Chat
+      </button>
     </div>
   );
 }
 
-export default App;
+export default ChatWidget;
