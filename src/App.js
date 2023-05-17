@@ -8,10 +8,11 @@ function ChatWidget() {
   };
 
   return (
-    <div className="chat-widget">
-      <button className="chat-widget-button" onClick={handleClick}>
+    <div className="">
+      hello
+      {/* <button className="chat-widget-button" onClick={handleClick}>
         Chat
-      </button>
+      </button> */}
     </div>
   );
 }
